@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Smooth model picker",
+    "description": "Two-pane model and reasoning-effort picker for DeepSeek Harness with Pointer Events + FLIP drag-to-reorder, external sliding effort scrubber, custom folders with per-folder aliases, vendor color picker, bilingual UI, and JSON backup/restore."
+  }
+}

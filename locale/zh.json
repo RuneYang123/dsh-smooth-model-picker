@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "丝滑模型选择器",
+    "description": "面向 DeepSeek Harness 的双栏模型与思考强度选择器：支持 Pointer Events + FLIP 丝滑拖拽排序、外置满轨划动思考强度条、自定义文件夹与独立模型别名、厂商圆点调色盘、中英文即时切换及配置备份恢复。"
+  }
+}

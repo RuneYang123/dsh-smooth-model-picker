@@ -1,0 +1,4 @@
+- insert:
+    - id: smooth-model-picker
+      name: 'dsh-smooth-model-picker'
+      config: {}

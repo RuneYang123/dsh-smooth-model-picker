@@ -1,0 +1,67 @@
+{
+  "name": "dsh-smooth-model-picker",
+  "version": "0.1.0",
+  "description": "Smooth two-pane model & reasoning-effort picker for DeepSeek Harness with FLIP drag-to-reorder, sliding effort bar, and custom folders. · DSH 丝滑双栏模型与思考强度选择器。",
+  "author": "RuneYang123 <runeyang123@outlook.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuneYang123/dsh-smooth-model-picker.git"
+  },
+  "homepage": "https://github.com/RuneYang123/dsh-smooth-model-picker#readme",
+  "bugs": {
+    "url": "https://github.com/RuneYang123/dsh-smooth-model-picker/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "model-picker",
+    "reasoning-effort",
+    "ui"
+  ],
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node test/smoke.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/logo.svg",
+    "LICENSE",
+    "README.md",
+    "README.en.md"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "slots",
+        "sessions",
+        "modelDirectories",
+        "locale"
+      ]
+    }
+  }
+}
